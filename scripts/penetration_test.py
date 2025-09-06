@@ -28,7 +28,7 @@ def check_headers(url):
 def check_https(url):
     # Ensure HTTPS is enforced
 
-    if not url.startswitch("https://"):
+    if not url.startswith("https://"):
         print(f"[WARNING] {url} is not using HTTPS")
     else: 
         print(f"[OK] {url} is using HTTPS")
